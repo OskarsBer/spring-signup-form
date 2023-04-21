@@ -126,6 +126,37 @@ h1 {
   }
 }
 
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-column {
+    max-height: 100px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    gap: 10px;
+  }
+
+  .logo-container > p {
+    font-size: 70px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .footer {
+    visibility: hidden;
+  }
+}
+
 /* Form */
 #signupform input[type="text"],
 #signupform input[type="email"],
@@ -231,4 +262,5 @@ input[type="password"]:focus {
 
 .submit-section span {
   color: #80b9d3;
+  cursor: pointer;
 }
