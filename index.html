@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Spring Sign-Up Form</title>
   </head>
   <body>
@@ -34,10 +40,96 @@
         </div>
         <div class="form-container">
           <h1>Let's get started!</h1>
-          <form action="#"></form>
+          <form id="signupform" class="signup-form">
+            <div class="signup-form-name">
+              <input
+                id="name"
+                placeholder="Name *"
+                name="name"
+                type="text"
+                value=""
+                pattern="^[^0-9]+$"
+                size="26"
+                maxlength="200"
+                required
+              />
+              <label for="name">NAME</label>
+            </div>
+            <div class="signup-form-lastname">
+              <input
+                id="lastname"
+                placeholder="Last Name *"
+                name="lastname"
+                type="text"
+                value=""
+                pattern="^[^0-9]+$"
+                size="26"
+                maxlength="200"
+                required
+              />
+              <label for="lastname">LAST NAME</label>
+            </div>
+            <div class="signup-form-email">
+              <input
+                id="email"
+                placeholder="Email *"
+                name="email"
+                type="email"
+                value=""
+                size="26"
+                maxlength="100"
+                required
+              />
+              <label for="email">EMAIL</label>
+            </div>
+            <div class="signup-form-phone">
+              <input
+                id="phone"
+                placeholder="Phone Number"
+                name="phone"
+                type="tel"
+                value=""
+                size="26"
+                maxlength="100"
+              />
+              <label for="phone">PHONE NUMBER</label>
+            </div>
+            <div class="signup-form-password error">
+              <input
+                id="password"
+                placeholder="Password *"
+                name="password"
+                type="password"
+                value=""
+                size="26"
+                maxlength="100"
+              />
+              <label for="password">PASSWORD</label>
+            </div>
+            <div class="signup-form-confirmpassword error">
+              <input
+                id="confirmpassword"
+                placeholder="Confirm Password *"
+                name="confirmpassword"
+                type="password"
+                value=""
+                size="26"
+                maxlength="100"
+              />
+              <label for="confirmpassword">CONFIRM PASSWORD</label>
+            </div>
+          </form>
         </div>
         <div class="submit-section">
-          <button>Create Account</button>
+          <div class="form-submit">
+            <input
+              name="submit"
+              type="submit"
+              id="submit"
+              class="submit"
+              value="Create Account"
+            />
+          </div>
           <p>Already registered? Log in</p>
         </div>
       </section>
