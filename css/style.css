@@ -63,6 +63,10 @@ body {
   color: #fff;
 }
 
+.footer a {
+  color: #fff;
+}
+
 .right-column {
   display: flex;
   flex-direction: column;
@@ -233,6 +237,11 @@ input[type="password"]:focus {
 }
 #signupform input:focus::placeholder {
   color: transparent;
+}
+
+#message {
+  font-size: 0.85rem;
+  padding-left: 50px;
 }
 
 .submit-section input[type="submit"] {

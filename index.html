@@ -22,7 +22,10 @@
           <p>SPRING</p>
         </div>
         <div class="footer">
-          <p>Photo by zero take on Unsplash</p>
+          <p>
+            Photo by <a href="https://unsplash.com/@zerotake">zero take</a> on
+            Unsplash
+          </p>
         </div>
       </section>
       <section class="right-column">
@@ -100,6 +103,7 @@
                 value=""
                 size="26"
                 maxlength="100"
+                required
               />
               <label for="password">PASSWORD</label>
             </div>
@@ -112,9 +116,11 @@
                 value=""
                 size="26"
                 maxlength="100"
+                required
               />
               <label for="confirmpassword">CONFIRM PASSWORD</label>
             </div>
+            <span id="message"></span>
           </form>
         </div>
         <div class="submit-section">
@@ -131,5 +137,7 @@
         </div>
       </section>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
