@@ -6,7 +6,7 @@ Built as part of individual assignment of the FullStack JavaScript module on The
 ### Preview:
 ![spring-preview](https://user-images.githubusercontent.com/103112804/233834690-11d26ff6-b14a-4c65-90e1-2223ccb16841.png)
 
-## How It's Made:
+### How It's Made:
 
 - A sign-up form responsive layout built using CSS flexbox.
 - Client-side form validation implemented using HTML5 in combination with JavaScript.<br><br>  
